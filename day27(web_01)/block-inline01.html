@@ -1,0 +1,49 @@
+<!-- 10번 : css스타일 - 내부스타일 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS 내부 스타일</title>
+  <style>
+    /* css 주석 */
+    /* h1태그 선택자 사용 */
+    h1 {
+      color:yellow;
+      background-color: black;
+    }
+    /* id 선택자로 사용 #id명*/
+
+    #span-id{
+      color:deeppink; 
+      background-color: brown;
+    }
+
+    /* 클래스 선택자로 사용 .클래스명 */
+    .p-class{
+      background-color:aqua;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- html 주석 -->
+  <h1>id와 class속성</h1>
+  <span id="span-id">span요소1</span>
+  <span style="color:red; background-color:beige">span요소2</span>
+  <p class="p-class">p요소1</p>
+  <!-- 인라인스타일과 내부스타일로 CSS가 겹칠경우 -->
+  <!-- 인라인스타일이 내부스타일보다 우선순위가 높다-->
+   <!-- 인라인스타일에서 적용한 CSS가 적용된다. -->
+   <!-- 웬만하면 사용하지 말 것. -->
+  <p class="p-class" style="color:blue; background-color:beige">p요소2</p> 
+  <!-- div{div요소$}*2 -->
+  <div class="p-class">div요소1</div>
+  <div style="color:darkblue; background-color:beige">div요소2</div>
+</body>
+</html>
+
+
+
+

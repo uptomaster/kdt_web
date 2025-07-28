@@ -1,0 +1,34 @@
+<!-- 6번 : 고급선택자3(가상요소) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>고급선택자3(가상요소)</title>
+  <style>
+    li::first-letter{
+      color:red;
+    }
+    li::first-line{
+      background-color: aqua;
+    }
+    li:last-child::before{
+      content:"new";
+      color:blueviolet;
+      background-color: lawngreen;
+      font-size:30px;
+    }
+
+  </style>
+</head>
+<body>
+  <main>
+    <ul>
+      <li>리스트1</li>
+      <li>리스트2</li>
+      <li>리스트3</li>
+    </ul>
+  </main>
+</body>
+</html>

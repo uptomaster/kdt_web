@@ -1,0 +1,88 @@
+body {
+  margin-top : 50px;
+}
+
+*{
+  padding:0px;
+  margin:0px;
+  font-weight:bold ;
+}
+
+.header--title-box{
+  font-weight:bold;
+  border: 1px solid black;
+}
+
+.header--text-box a{
+  color:black;
+  text-decoration: none;
+}
+
+.header--title-box{
+  background-color:black;
+  border: 1px solid black;
+}
+
+.footer-container {
+  color:gray;
+  text-align: center;
+}
+
+.header--login-container{
+  display:flex;
+  text-align:right;
+}
+.header--section-container{
+  display:flex;
+  /* flex:1; */
+  text-align: center;
+  justify-content: space-between;
+}
+
+.header--info-box{
+  background-color: gray;
+}
+
+.header--left-container{
+   display:flex;
+  /* flex:1; */
+  text-align: left;
+  /* justify-content: space-a; */
+}
+
+.header--container{
+  display:flex;
+  justify-content: space-between;
+}
+
+/* 리스트 간격 띄우기 작업 & 점 없애기 */
+nav ul{
+  padding:1%;
+  list-style:none;
+  text-decoration: none;
+}
+
+/* nav태그 - ul태그 - 리스트 밑줄 없애기 */
+nav ul li a{
+  text-decoration: none;
+}
+
+.main--info-container{
+
+}
+
+main{
+  display:flex;
+}
+
+.main--menu{
+  background-color:ghostwhite;
+}
+
+.main--info-container{
+  background-color: ;
+}
+
+.main--info-title{
+  display:flex;
+}

@@ -1,0 +1,42 @@
+<!--4번 : 테이블 태그(프로젝트할땐 테이블태그 안쓸거임)-->
+<!--테이블 태그 <table></table>, 행<tr></tr>, 열<td></td>, 열제목<th></th>, 머릿말<thead></thead>, <tbody></tbody>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>테이블태그</title>
+</head>
+<body>
+  <h1>기본 테이블</h1>
+  <table border="1" cellspacing="0" cellpadding="10">
+    <!--border속성 : 테이블 테두리 표시, cellspacing : 셀 사이의 간격 없애기
+        cellpadding : 셀 내부 여백 설정, table태그 : 테이블의 전체 영역-->
+    <thead> <!--thead태그는 제목영역이다.(보통 th태그를 포함한다.)-->
+      <tr> <!--행(row, 가로 한줄)-->
+        <th>번호</th> <!--제목셀*(굵게, 가운데정렬)-->
+        <th>이름</th>
+        <th>이메일</th>
+      </tr>
+    </thead>
+    <tbody> <!--데이터영역*(실제값이 들어감.). 보통 td태그를 포함-->
+      <tr> <!--행(row, 가로 한줄)-->
+        <td>1</td> <!--셀*(Cell, 일반 데이터들이 들어가는 공간)-->
+        <td>홍길동</td>
+        <td>hong@naver.com</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>짱구</td>
+        <td>gu@naver.com</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>유리</td>
+        <td>yuri@naver.com</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

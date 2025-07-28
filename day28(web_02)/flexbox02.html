@@ -1,0 +1,77 @@
+<!--5번 : flexbox02--->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flexbox02</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+    }
+
+    .main{
+      height:500px;
+      display:flex;
+      flex-direction:column;
+      /* height:100vh; */
+      border:3px solid black;
+      
+    }
+    .header, .footer{
+      height:100px;
+      border:3px solid black;
+      text-align:center;
+      font-size:40px;
+      font-weight:bold;
+    }
+    .section-container{
+
+      flex-direction: row;
+      display:flex;
+      flex:1;
+      border:3px solid black;
+    }
+    .aside{
+      width:150px;
+      background-color: gray;
+      border:3px solid black;
+      text-align:center;
+      line-height:300px;
+      font-size:40px;
+      font-weight:bold;
+    }
+    .section{
+      flex:1;
+      background-color:beige;
+      border:3px solid black;
+      text-align: center;
+      line-height:300px;
+      font-size:40px;
+      font-weight:bold;
+    }
+    .header{
+      background-color:darkcyan;
+    }
+    .footer{
+      background-color:hotpink;
+      border:3px solid black;
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <!-- header, footer 높이 : 100px
+         main 높이 : 500px, aside 너비 : 150px, 나머지 section -->
+    <div class="header">header</div>
+    <div class="section-container">
+      <div class="aside">aside</div>
+      <div class="section" style="text-align: center;">section</div>
+    </div>
+    <div class="footer">footer</div>
+  </div>
+</body>
+</html>

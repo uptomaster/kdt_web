@@ -1,0 +1,32 @@
+<!--2번 : a태그<a></a>, img태그<img />, br태그<br />-->
+
+<!--느낌표+enter : 기본구조 단축키-->>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>a태그와 이미지 태그</title>
+</head>
+<body>
+  <h1>a태그 : 링크 태그</h1>
+  <a href = "https://www.naver.com" target="_blank">네이버</a><br>
+  <a href = "https://www.google.com">구글</a>
+  <a href = "./basic01.html">basic01</a>
+  <h1>img태그 : 이미지 태그</h1>
+  <img src="./Shurek2.jpg" alt = "슈렉사진" width="150" height="150">
+  <img src="./../img/Shurek.jpg">
+  <!--img에도 상대 경로로 작성한다.
+  ./ : 현재 폴더를 의미하고 ../ : 상위폴더를 의미한다.-->
+<h1>img태그와 a태그 함께 사용(사진누르면 링크이동)</h1>
+<a href="https://www.naver.com/" target="_blank">
+  <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTAxMTJfOTIg%2FMDAxNzM2NjQxMDI0MTQw.xFUQQTFlKvVKoN86ERS-wenM6mARG3BV0ARtVPJhFh0g.z8-VQ-LM4Fwots_wPVoEyszhIZHIOmwfj3NmKbrpkJEg.JPEG%2F1.jpg&type=sc960_832" 
+  width="30%" height="30%">
+</a>
+<!--링크로 넣어줄때 이미지 주소 복사도 가능하다. 높이와 너비는 기본 px단위로 설정되고 %단위로도 사용 가능하다.-->
+</body>
+</html>
+
+
+

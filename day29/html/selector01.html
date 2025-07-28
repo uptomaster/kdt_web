@@ -1,0 +1,81 @@
+<!-- 4번 : 고급 선택자 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>고급선택자</title>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+    }
+    main,section,div{
+      border: 1px solid black;
+      padding:20px;
+    }
+    main{
+      width:80%;
+      height:600px;
+    }
+    section{
+      width:80%;
+      height:80%;
+      margin:auto;
+    }
+
+    div{
+      width:80%;
+      margin:10px auto;
+    }
+
+    main div{
+      /* 하위 선택자는 내 자손요소 모두를 선택한다. */
+      border-radius:20px;
+      background-color: yellow;
+    }
+
+    section > div{
+      /* 자식 선택자는 내 바로 아래 포함된 자식 요소를 선택한다. */
+      background-color: skyblue;
+    }
+
+    .div3+div{
+      /* 인접형제 선택자는 바로 다음에 오는 형제 요소 하나를 선택한다. */
+      background-color: orangered;
+    }
+    .div3~div{
+      /* 형제선택자는 다음에 오는 모든 형제 요소를 선택한다. */
+      border: 3px dotted black;
+    }
+    a[id]{
+      color:red;
+      font-size:30px;
+      text-decoration: none; /*밑줄 사라지게 하는 속성*/
+    }
+    a[href="https://www.google.com"]{
+      color:brown;
+      font-size:50px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <main>main
+    <section>section
+      <div class="container">container
+        <div class="div1">div1</div>
+        <div class="div2">
+          <a href="https://www.google.com">div2</a>
+        </div>
+        <div class="div3">
+          <a href="#" id="div3_a">div3</a>
+        </div>
+        <div class="div4">div4</div>
+        <div class="div5">div5</div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

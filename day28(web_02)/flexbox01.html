@@ -1,0 +1,54 @@
+<!-- 4번 : flexbox -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flexbox</title>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+    }
+
+    .main-container{
+      border:3px solid black;
+      /* 확인용 */
+      display:flex;
+      flex-direction:row;
+      height:100vh; /*vh는 화면에 보여지는 전체 높이를 모두 차지하겠다는 의미이다.*/
+    }
+    .header,.footer{
+      width:120px;
+    }
+    .header{
+      background-color: cadetblue;
+      /* height:120px; */
+    }
+
+    .main{
+      background-color: yellow;
+      /* width:480px; */
+      flex:1; /*.main클래스의 요소가 남은 공간을 모두 차지하게 하는 속성*/
+    }
+
+    .footer{
+      background-color: blueviolet;
+      /* height:120px; */
+    }
+
+  </style>
+</head>
+<body>
+  <!-- div.main-container>div.*3 -->
+  <div class="main-container">
+    <div class="header">header</div>
+    <div class="main">main</div>
+    <div class="footer">footer</div>
+  </div>
+</body>
+</html>
+
+
+

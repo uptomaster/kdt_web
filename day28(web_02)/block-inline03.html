@@ -1,0 +1,51 @@
+<!-- 1번 : 내부스타일과 블록요소(day27의 block-inline02.html이어서 진행) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div{
+      width:100px;
+      height:100px;
+      /*블록 요소는 차지하는 영역의 크기를 조절할 수 있다.*/
+      border:1px solid black;
+      /* border : 굵기 형태 색상; */
+      /* 형태 : solid(직선), dotted(점선), dashed(긴 점선) */
+      background-color: lightblue;
+      
+      /* margin:간격벌려주기(요소와 요소 사이의 간격) 
+         20px로 설정하면 상하좌우 모두 20px의 간격이 생긴다.
+         margin은 요소 간 간격을 의미하며, 두 요소가 상하로 중복되는 경우,
+         40px이 아닌 20px간격만 떨어진다.*/
+      margin:20px; 
+      /* padding:내용과 요소 사이의 간격 
+         테두리와 컨텐츠(내용) 사이의 여백을 의미한다.*/
+      padding:20px;
+    }
+    span{
+      width:100px;
+      height:100px;
+      /* 인라인요소는 정렬도, 크기지정도 불가능하다 */
+      border:1px solid black;
+      margin:20px;
+      padding:20px;
+      /* 인라인요소는 margin이 위아래는 적용되지 않는다.  */
+      /* 좌우는 20px, 20px로 총 40px이 적용된다. */
+    }
+  </style>
+</head>
+<body>
+  <!-- div태그 사용하는 방법 : div{$}*5 -->
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <span>1</span><span>2</span>
+</body>
+</html>
+
+

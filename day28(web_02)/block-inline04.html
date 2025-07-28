@@ -1,0 +1,73 @@
+<!-- 2번 : 특정 마진과 패딩 적용하기-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>특정 마진과 패딩 적용</title>
+  <style>
+    /* 전역 선택자 */
+    *{
+      margin:0;
+      padding:0;
+    }
+
+    .div2{
+      background-color: lightcoral;
+    }
+
+    /* 클래스의 우선순위가 태그보다 높다 */
+    /* .div{
+      margin : 20px;
+      padding : 50px;
+    } */
+
+    div{
+      background-color: yellow;
+      border: 3px dotted red;
+      width:100px;
+      height:100px;
+
+      /* margin-left : 50px; */
+      
+      /* 상하(20px) 좌우(auto:중앙정렬) */
+      /* margin:20px auto; */
+
+      /*margin을 조절하면 블록요소들을 화면 중앙으로 옮길 수 있다. 
+      좌우에 auto로 설정하면 알아서 좌우 여백을 동일하게 맞춰준다.
+      auto는 화면 크기에 따라 알아서 중앙을 유지하게 해준다.*/
+
+      /* margin-bottom:50px; */
+
+      /* 상 우 하 좌 */
+      /* margin : 0 0 20px 50px; */
+      /* padding: 20px 0 0 0; */
+
+      text-align:center;
+      /* 박스 테두리를 둥글게 변경할 때는 border-radius 속성을 이용한다.
+         값을 크게 입력할수록 둥글게 변하고, 여기서는 주로 %단위를 사용한다. */
+      border-radius:50%;
+      
+    }
+
+    /* 아이디 선택자가 클래스나 태그보다 높다 */
+    #div1{
+      background-color: chocolate;
+    }
+  </style>
+</head>
+<body>
+  <!-- div.div{$}*10 -->
+  <div class="div" id="div1">1</div>
+  <div class="div div2">2</div>
+  <div class="div">3</div>
+  <div class="div">4</div>
+  <div class="div">5</div>
+  <div class="div">6</div>
+  <div class="div">7</div>
+  <div class="div">8</div>
+  <div class="div">9</div>
+  <div class="div">10</div>
+</body>
+</html>

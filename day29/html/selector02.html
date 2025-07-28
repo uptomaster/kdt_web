@@ -1,0 +1,46 @@
+<!-- 5번 : 고급선택자2 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>고급선택자2</title>
+  <style>
+    a:link{
+      color:red;
+    }
+    a:visit{
+      color:black;
+    }
+    a:hover{
+      color:yellow;
+    }
+    a:first-child{
+      font-size:30px;
+    }
+    a:last-child{
+      font-size:50px;
+    }
+    a:nth-child(2){
+      font-size:100px;
+    }
+    a:not(a:nth-child(2)){
+      color:green;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- main>div>a{링크$}*5 -->
+  <main>
+    <div>
+      <a href="selector01.html">링크1</a>
+      <a href="https://www.google.com">링크2</a>
+      <a href="#">링크3</a>
+      <a href="#">링크4</a>
+      <a href="#">링크5</a>
+    </div>
+  </main>
+</body>
+</html>

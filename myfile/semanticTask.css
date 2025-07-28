@@ -1,0 +1,133 @@
+
+ *{
+      margin:0;
+      padding:0;
+    }
+
+    .header--text-box{
+      background-color:coral;
+      color:white;
+      font-size:40px;
+      text-align: center;
+    }
+
+    header, .main-container, .header--text-box, footer{
+      /* font-weight:bold; */
+      color:white;
+      font-size: 30px;
+    }
+
+    nav ul{
+      background-color:darkblue;
+      font-size: 20px;
+      display:flex;
+      /* justify-content:space-around; */
+      list-style: none;
+      
+    }
+    
+    li{
+      margin:1%;
+    }
+
+    .main-container{
+      /* background-color: aquamarine; */
+      display:flex;
+      color:white;
+      font-size:30px;
+      background-color: blue;
+      /* flex:1; */
+      /* flex-wrap: wrap; */
+      /* align-items: center; */
+    }
+
+    aside{
+      background-color: brown;
+      width: 10%;
+      align-items: center;
+      line-height: 700px;
+      text-align: center;
+    }
+
+    main{
+      background-color: chartreuse;
+      flex:1;
+      /* align-items: center; */
+    }
+
+    .section01--text-box{
+      text-align: left;
+    }
+
+    .section01{
+      background-color:blueviolet;
+      display:flex;
+      flex-direction: column;
+      /* flex-direction: column; */
+      margin:1% 30% 1%;
+      /* padding:1% */
+      /* align-items: center; */
+
+    }
+
+    .section--article-container1{
+      background-color: blueviolet;
+      display:flex;
+      /* flex-wrap: wrap; */
+      align-items: center;
+      font-size:30px;
+      padding:1%;
+      margin:auto;
+      /* margin:10 1 1; */
+    }
+    .section01--article{
+      background-color:lightskyblue;
+      margin:1%;
+      padding:1;
+      border:10%;
+      align-items: center;
+      margin:10%;
+      /* padding:2%; */
+      /* border:10%; */
+
+    }
+
+    .article--text-box{
+      background-color: lightskyblue;
+      align-items: center;
+      /* padding:20%; */
+      text-align: center;
+    }
+
+    .section02--text-box{
+      text-align: center;
+      align-items:center;
+    }
+
+    .section02{
+      background-color:blueviolet;
+      display:flex;
+      /* margin:100px; */
+      margin:1% 30% 1%;
+    }
+    .section--article-container2{
+      background-color: blueviolet;
+      display:flex;
+      flex-wrap: wrap;
+      align-items: center;
+      padding:1%;
+      /* margin:1% 30% 1%; */
+    }
+
+    .section02--article{
+      background-color:lightskyblue;
+      margin:10%;
+      padding:2%;
+      border:10%;
+    }
+
+    footer{
+      background-color:black;
+      color:white;
+      font-size:30px;
+    }

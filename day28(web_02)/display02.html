@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>display02</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+    }
+
+    h1, span, div{
+      margin:10px;
+    }
+
+    .span--inline{
+      border: 1px solid red;
+      background-color: beige;
+      /* 인라인요소는 너비,높이,정렬안됨 */
+      width:100px;
+      height:100px;
+    }
+
+    .span--block{
+      border: 1px solid blue;
+      background-color: yellow;
+      
+      width:100px;
+      height:100px;
+      display:block;
+    }
+
+    .span--inline-block, .div--inline-block{
+      background-color: orange;
+      border: 1px solid black;
+      width:100px;
+      height:100px;
+      display : inline-block; /*외부는 인라인요소처럼, 내부는 블록요소처럼 사용*/
+    }
+
+    .div--none{
+      background-color: black;
+      color:white;
+      border: 1px solid greenyellow;
+      display:none /*요소는 존재하지만, 삭제*/
+    }
+
+  </style>
+</head>
+<body>
+  <h1>display : inline</h1>
+  <span class="span--inline">span1</span>
+  <span class="span--inline">span2</span>
+  <span class="span--inline">span3</span>
+  <span class="span--inline">span4</span>
+  <span class="span--inline">span5</span>
+
+  <h1>display : block</h1>
+  <span class="span--block">span1</span>
+  <span class="span--block">span2</span>
+  <span class="span--block">span3</span>
+  <span class="span--block">span4</span>
+  <span class="span--block">span5</span>
+
+  <h1>display : inline-block</h1>
+  <!-- span.span--inline-block{span$}*2 -->
+  <span class="span--inline-block">span1</span>
+  <span class="span--inline-block">span2</span>
+  <!-- div.div--inline-block{div$}*2 -->
+  <div class="div--inline-block">div1</div>
+  <div class="div--inline-block">div2</div>
+
+  <h1>display : none</h1>
+  <!-- div.div--none{div$}*2 -->
+  <div class="div--none">div1</div>
+  <div class="div--none">div2</div>
+  <div>div3</div>
+
+</body>
+</html>
