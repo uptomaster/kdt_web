@@ -1,0 +1,28 @@
+<!-- 6번 : DOM - querySelector -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>querySelector</title>
+</head>
+
+<body>
+  <div class="myDiv" id="myDiv_p">
+    <p>div 태그 안의 p 태그입니다1</p>
+    <p>div 태그 안의 p 태그입니다2</p>
+  </div>
+  <div class="myDiv">
+    <span>div 태그 안의 span 태그입니다</span>
+  </div>
+</body>
+<script>
+  // querySelector("선택자")         	첫번째일치요소   	 CSS 선택자 사용가능
+  const result1 = document.querySelector("#myDiv_p p");
+  console.log(result1.innerText);
+  const result2 = document.querySelector(".myDiv span");
+  console.log(result2.innerHTML);
+</script>
+</html>

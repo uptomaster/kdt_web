@@ -1,0 +1,24 @@
+<!-- 3번 : DOM - getelementsByClassName -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>getelementsByClassName</title>
+</head>
+<body>
+  <div class="myDiv">1번째 div태그</div>
+  <div class="myDiv">2번째 div태그</div>
+  <div >3번째 div태그</div>
+</body>
+<script>
+  const div = document.getElementsByClassName("myDiv");
+  console.log(div); // HTMLCollection으로 출력된다.
+  for(let i = 0; i < div.length; i++){
+    // console.log(div[i]);
+    // console.log(div[i].innertext);
+    console.log(div[i].innerHTML);
+  }
+</script>
+</html>

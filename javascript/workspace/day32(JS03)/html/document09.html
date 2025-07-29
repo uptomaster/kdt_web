@@ -1,0 +1,21 @@
+<!-- 10번 : id를 이용한 선택-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>id를 이용한 선택</title>
+</head>
+<body>
+  <div>
+    <div id="odd">1번째 div입니다</div>
+    <div">2번째 div입니다</div>
+    <div id="odd">3번째 div입니다</div>
+  </div>
+</body>
+<script>
+  console.log(document.getElementById("odd"));
+  document.getElementById("odd").style.backgroundColor="lightblue"; // 아이디값이 여러개여도 첫번째 요소만 선택된다.
+</script>
+</html>

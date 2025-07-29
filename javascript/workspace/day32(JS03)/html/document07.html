@@ -1,0 +1,57 @@
+<!-- 8번 : 클래스 이름을 이용한 선택 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>클래스 이름을 이용한 선택</title>
+  <!-- <style>
+    .odd{
+      color:red;
+    }
+    .even{
+      color:blue;
+    }
+  </style> -->
+</head>
+<body>
+  <h1>클래스 이름을 이용한 선택</h1>
+  <div>
+    <ul>
+      <li class="item">1번째 아이템입니다.</li>
+      <li class="item">2번째 아이템입니다.</li>
+      <li class="item">3번째 아이템입니다.</li>
+      <li class="item">4번째 아이템입니다.</li>
+      <li class="item">5번째 아이템입니다.</li>
+    </ul>
+  </div>
+</body>
+<script>
+  const items = document.querySelectorAll(".item");
+  console.log(items); // NodeList기 때문에 forEach사용가능
+
+  // HTMLCollection은 forEach 메소드를 바로 사용이 불가능하다.(HTMLCollection 객체는 forEach메소드에 직접 접근 불가.)
+  // 따라서, 추가로 대입해서 사용해야한다.
+  // HTMLCollection.prototype.forEach = Array.prototype.forEach;
+  // HTMLCollection의 프로토타입에 forEach메소드를 Array의 forEach메소드로 설정하는 한 줄이 반드시 필요하다.
+  // 위 문장이 추가되면 HTMLCollection 객체에서도 forEach 메소드 사용이 가능해진다.
+
+  items.forEach((item, index)=>{
+    if((index+1) % 2 === 0){ // 인덱스는 0부터 시작하므로
+      item.classList.add('even');
+    }
+    else{
+      item.classList.add('odd');
+    }
+  });
+
+  const colors = {even : "blue", odd : "red"};
+  console.log(colors);
+
+  items.forEach((item)=>{
+    const className = item.classList.contains('even') ? 'even' : 'odd';
+    item.style.color = colors[className];
+  });
+</script>
+</html>
