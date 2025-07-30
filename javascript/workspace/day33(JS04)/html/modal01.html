@@ -1,0 +1,33 @@
+<!-- 2번 : 모달창 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>모달창</title>
+  <link rel="stylesheet" href="./../css/modal01.css">
+</head>
+
+<body>
+  <button onclick="openModal()">모달열기</button>
+  <!-- 새로운 공간이 필요함 -->
+  <div class="modal" id="myModal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times</span> <!-- '×'을(를) 나타내는 문자 엔터티-->
+      <p>모달이 열렸습니다.</p>
+    </div>
+  </div>
+</body>
+<script>
+  function openModal() {
+    document.getElementById("myModal").style.display = "block";
+  }
+
+  function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+  }
+</script>
+
+</html>

@@ -1,0 +1,32 @@
+<!-- 5번 : async 스크립트(비동기 스크립트) -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>async 스크립트</title>
+</head>
+
+<body>
+  <p>스크립트 앞 컨텐츠</p>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      alert("DOM이 준비되었습니다.");
+    });
+  </script>
+  <script async src="https://javascript.info/article/script-async-defer/long.js"></script>
+  <script async src="https://javascript.info/article/script-async-defer/small.js"></script>
+  <p>스크립트 뒤 컨텐츠</p>
+</body>
+
+</html>
+
+<!-- 실행 순서는 가변적으로 변한다.
+HTML파싱이 진행되면서 <p>와 <script>를 만난다.
+- async 스크립트들(long.js와 small.js)은 비동기로 다운로드된다.
+- 누가 먼저 다운로드를 마치느냐에 따라서 실행 순서가 달라진다.
+- HTML 파싱은 이때 잠깐 멈췄다가 다시 진행된다.(script 실행 시점만)
+- DOMContentLoaded는 DOM 파싱이 끝나면 바로 실행되는데 아직 async 스크립트가 실행중이어도 상관없다.
+-->
