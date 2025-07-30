@@ -21,5 +21,11 @@
   // getElementsByTagName을 사용해서 모든 li요소를 선택하기, console.log로 출력
   // 선택된 모든 li요소에 list-item 클래스 추가하기
   // 마지막  li요소의 배경색을  lightblue로 변경하기.
+  const result = document.getElementsByTagName("li");
+  console.log(result);
+  // result.style.backgroundColor="lightblue";
+  for(let i=0; i<result.length; i++){
+    result[i].style.backgroundColor="lightblue";
+  }
 </script>
 </html>
