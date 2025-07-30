@@ -26,21 +26,26 @@ buttonclick.addEventListener('click', () => {
   unorderlist.appendChild(list);
 });
 
-const buttonclick2 = document.getElementsByClassName("delete-button");
-buttonclick2.addEventListener('click', () => {
-  confirm("삭제하시겠습니까?");
-  
-});
 
-const checkbox = document.querySelectorAll('input[type=checkbox]');
+const checkbox = document.querySelectorAll('.check-button');
+console.log(checkbox);
+
+NodeList.prototype.forEach = Array.prototype.forEach;
+NodeList.prototype.filter = Array.prototype.filter;
+checkbox.forEach((checkbox) => {
+  checkbox.addEventListener('click', (e)=>{
+    if(e.target.checked){
+      result.removeChild(target);
+    }
+  })
+})
+
 
 function changeGreen() {
   this.setAttribute("style", "background-color:green");
 }
 
 checkbox.addEventListener('click', changeGreen);
-
-
 
 function delist() {
   const target = confirm("삭제");
