@@ -132,18 +132,32 @@
 
     <footer>
         <div class="tree-contribute">
-            <article>
-                <a>현재까지 심어진 나무 수 : 5그루</a>
+            <article class="tree-image-container">
+                <a>현재까지 심어진 나무</a>
+                <button class="addButton">버튼</button>
                 <div tree-container>
+                    <!-- <img src="./../img/movingtree.gif">
                     <img src="./../img/movingtree.gif">
                     <img src="./../img/movingtree.gif">
                     <img src="./../img/movingtree.gif">
-                    <img src="./../img/movingtree.gif">
-                    <img src="./../img/movingtree.gif">
+                    <img src="./../img/movingtree.gif"> -->
                 </div>
             </article>
         </div>
     </footer>
 </body>
+<script>
+    const addButton = document.getElementById("addButton");
+    const imageContainer = document.getElementById("tree-image-container");
+    let imageCount = 0; // 추가된 이미지 개수 추적
+
+    addButton.addEventListener("click", function () {
+        imageCount++;
+        const img = document.createElement("img");
+        img.src = `./../img/movingtree.gif${imageCount}`; // 이미지 URL
+        img.alt = `이미지 ${imageCount}`;
+        imageContainer.appendChild(img);
+    });
+</script>
 
 </html>
